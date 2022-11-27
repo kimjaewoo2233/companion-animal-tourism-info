@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Moderna Bootstrap Template - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/faviconlion.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Moderna - v4.10.1
+  * Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    @font-face {
+      font-family: 'FlowerSalt';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-2@1.0/FlowerSalt.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'ChosunCentennial';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ChosunCentennial.woff2') format('woff2');
+      font-weight: normal;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html" style="font-family: FlowerSalt; font-size: 50px;font-weight: bolder"><span>동물관광</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!--여기에 검색바 -->
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown" style="font-family: ChosunCentennial">강원도에 반려동물과 함께 놀러오세요! </h2>
+          <p class="animate__animated animate__fadeInUp" style="font-family: ChosunCentennial">반려동물에게 행복한 추거을 만들어주세요!.</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown" style="font-family: ChosunCentennial">강원도에 반려동물과 함께 놀러오세요!</h2>
+          <p class="animate__animated animate__fadeInUp" style="font-family: ChosunCentennial">반려동물에게 행복한 추거을 만들어주세요!.</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown" style="font-family: ChosunCentennial">강원도에 반려동물과 함께 놀러오세요!</h2>
+          <p class="animate__animated animate__fadeInUp" style="font-family: ChosunCentennial">반려동물에게 행복한 추거을 만들어주세요!..</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+          <h3 style="text-align: center; margin-bottom: 60px">강원도 관광 블로그 후기</h3>
+        <div class="row">
+
+           <a th:each ="blog : ${blog}" style="width: 150px; float: left; margin-left: 1px" th:href="@{${blog.link}}" >
+              <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box icon-box-cyan">
+<!--                  <div class="icon"><i class="bx bx-world"></i></div>-->
+                  <h4 class="title" style="display: block"><a th:text="${blog.title}" th:href="@{${blog.link}}">블로그제목</a></h4>
+                  <p class="description" th:text="${blog.description}">블로그 샬라샬라</p>
+                </div>
+              </div>
+           </a>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="assets/img/dog-img.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-fingerprint"></i></div>
+              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+              <p class="description">아래에 찾으시는 강원도에 위치를 선택해주세요!</p>
+            </div>
+
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-gift"></i></div>
+              <h4 class="title"><a href="">Nemo Enim</a></h4>
+              <p class="description">아래에 찾으시는 강원도에 위치를 선택해주세요!</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>관광지, 숙박, 식음료, 체험, 동물병원 모든 선택 가능합니다 !</h2>
+          <p>
+            Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" >
+        <!--검색 들어갸야함-->
+
+          <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-cyan">
+                   <h4 class="title"><a class="tourist">관광지</a></h4>
+              </div>
+          </div>
+          <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-cyan">
+              <h4 class="title"><a  href="" >숙박</a></h4>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-cyan">
+              <h4 class="title"><a  href="" >식음료</a></h4>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-cyan">
+              <h4 class="title"><a  href="" >체험</a></h4>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-cyan">
+              <h4 class="title"><a  href="" >동물병원</a></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row card-list" data-aos="fade-up">
+
+        </div>
+        <div class="row" data-aos="fade-up">
+
+            <div class="col-md-13 pt-4">
+              <div id="map" style="width:100%;height:400px;"></div>
+            </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+<!--            <img src="assets/img/features-3.svg" class="img-fluid" alt="">-->
+          </div>
+          <div class="col-md-7 pt-5">
+<!--            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>-->
+<!--            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>-->
+<!--            <ul>-->
+<!--              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>-->
+<!--              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>-->
+<!--              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>-->
+<!--            </ul>-->
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+<!--            <img src="assets/img/features-4.svg" class="img-fluid" alt="">-->
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+<!--            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>-->
+<!--            <p class="fst-italic">-->
+<!--              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore-->
+<!--              magna aliqua.-->
+<!--            </p>-->
+<!--            <p>-->
+<!--              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate-->
+<!--              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in-->
+<!--              culpa qui officia deserunt mollit anim id est laborum-->
+<!--            </p>-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <h4>Our Newsletter</h4>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>About Moderna</h3>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=388a1ec914c68f53dcff74c69f298442"></script>\
+  <script>
+    //지도를 담을 영역의 DOM 레퍼런스
+  /*  var options = { //지도를 생성할 때 필요한 기본 옵션
+      center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+      level: 3 //지도의 레벨(확대, 축소 정도)
+    };
+
+    var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+    var latitude = 0.0;
+    var longitude = 0.0;
+    // 마커가 표시될 위치입니다
+    var markerPosition  = new kakao.maps.LatLng(latitude, longitude);
+
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+      position: markerPosition
+    });
+
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);*/
+  </script>
+  <script th:inline="javascript">
+      var page = 1;
+
+      $('.tourist').click(function (){
+          axios.get("http://localhost:8080/list?partCode=PC03&page="+page)
+                  .then(response => {
+                      console.log(response.data[0].resultList)  //여기서 값 꺼내쓰셈
+                      var res = response.data[0].resultList;
+                      $.each(res, function(index,el){
+                        $('.card-list')
+                                .append(`<div class="card" style="width: 14rem; margin-left: 35px">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">`+el.title+`</h5><br>
+                                                    <h6 class="card-subtitle mb-2 text-muted">`+el.partName+` : `+res[0].areaName+`</h6>
+                                                    <p class="card-text">`+el.address+`</p>
+                                                    <a class="card-link map-btn-${index}" onclick="var latitude = ${el.latitude};  var longitude=${el.longitude};
+                                                         var container = document.getElementById('map');
+                                                        var options = { //지도를 생성할 때 필요한 기본 옵션
+                                                                center: new kakao.maps.LatLng(latitude, longitude), //지도의 중심좌표.
+                                                                level: 3 //지도의 레벨(확대, 축소 정도)
+                                                                    };
+                                                         var map = new kakao.maps.Map(container, options);
+                                                       var markerPosition  = new kakao.maps.LatLng(latitude, longitude);
+                                                   var marker = new kakao.maps.Marker({position: markerPosition});
+                                                   marker.setMap(map);">지도위치보기</a>
+                                                    <input type="hidden" class="latitude" value="${el.latitude}"/>
+                                                    <input type="hidden" class="longitude" value="${el.longitude}"/>
+                                                  </div>
+                                               </div>`)
+                      })
+
+          }).catch(err => {
+             console.log(err)
+          })
+          page++
+          if(page > 5){
+            page = 1
+          }
+      })
+
+      $('.map-btn-0').on('click','',function (){
+        console.log("test")
+      })
+      $('.map-btn-0').click(function (){
+        console.log("test")
+      })
+
+
+
+
+      // $('.tourist').click(function (){
+      //   axios.get("http://localhost:8080/list?partCode=PC03&page="+page)
+      //           .then(response => {
+      //         //     console.log(response.data[0].resultList)  //여기서 값 꺼내쓰셈
+      //          //    console.log(response.data[0].resultList[0])
+      //           }).catch(err => {
+      //     console.log(err)
+      //   })
+      //   page++
+      //   if(page > 5){
+      //     page = 1
+      //   }
+      // })
+  </script>
+</body>
+
+</html>
