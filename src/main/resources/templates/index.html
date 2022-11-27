@@ -203,26 +203,26 @@
           </div>
           <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-cyan">
-              <h4 class="title"><a  href="" >숙박</a></h4>
+              <h4 class="title"><a class="accommodation" href="" >숙박</a></h4>
             </div>
           </div>
           <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-cyan">
-              <h4 class="title"><a  href="" >식음료</a></h4>
+              <h4 class="title"><a class="food" href="" >식음료</a></h4>
             </div>
           </div>
           <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-cyan">
-              <h4 class="title"><a  href="" >체험</a></h4>
+              <h4 class="title"><a class="experience" href="" >체험</a></h4>
             </div>
           </div>
           <div class="col-md-5 col-lg-2 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box icon-box-cyan">
-              <h4 class="title"><a  href="" >동물병원</a></h4>
+              <h4 class="title"><a class="veterinary" href="" >동물병원</a></h4>
             </div>
           </div>
         </div>
-        <div class="row card-list" data-aos="fade-up">
+        <div class="row card-list" id="card-list" data-aos="fade-up">
 
         </div>
         <div class="row" data-aos="fade-up">
@@ -396,14 +396,14 @@
   <script th:inline="javascript">
       var page = 1;
 
-      $('.tourist').click(function (){
+      $('.tourist').click(function (){  //이거 완성본 이거 복붙 페이지는 5페이ㅣㅈ까지 요청하고 다음 페이지로 넘어가면 기존 페이지 삭제
           axios.get("http://localhost:8080/list?partCode=PC03&page="+page)
                   .then(response => {
                       console.log(response.data[0].resultList)  //여기서 값 꺼내쓰셈
                       var res = response.data[0].resultList;
                       $.each(res, function(index,el){
                         $('.card-list')
-                                .append(`<div class="card" style="width: 14rem; margin-left: 35px">
+                                .append(`<div class="card" style="width: 14rem; margin-left: 35px;margin-bottom: 30px">
                                                   <div class="card-body">
                                                     <h5 class="card-title">`+el.title+`</h5><br>
                                                     <h6 class="card-subtitle mb-2 text-muted">`+el.partName+` : `+res[0].areaName+`</h6>
@@ -427,9 +427,51 @@
           }).catch(err => {
              console.log(err)
           })
-          page++
+          var temp =  page++;
+
+          if(page > temp || page === 4){
+            $('#card-list').empty()
+          }
           if(page > 5){
             page = 1
+          }
+      })
+      $('.food ').click(function (){
+        axios.get("http://localhost:8080/list?partCode=PC01&page="+page)
+                .then(response => {
+                //  console.log(response.data[0].resultList)  //여기서 값 꺼내쓰셈
+                  var res = response.data[0].resultList;
+                  $.each(res, function(index,el){
+                    $('.card-list')
+                            .append(`<div class="card" style="width: 14rem; margin-left: 35px">
+                                                  <div class="card-body">
+                                                    <h5 class="card-title">`+el.title+`</h5><br>
+                                                    <h6 class="card-subtitle mb-2 text-muted">`+el.partName+` : `+res[0].areaName+`</h6>
+                                                    <p class="card-text">`+el.address+`</p>
+                                                    <a class="card-link map-btn-${index}" onclick="var latitude = ${el.latitude};  var longitude=${el.longitude};
+                                                         var container = document.getElementById('map');
+                                                        var options = { //지도를 생성할 때 필요한 기본 옵션
+                                                                center: new kakao.maps.LatLng(latitude, longitude), //지도의 중심좌표.
+                                                                level: 3 //지도의 레벨(확대, 축소 정도)
+                                                                    };
+                                                         var map = new kakao.maps.Map(container, options);
+                                                       var markerPosition  = new kakao.maps.LatLng(latitude, longitude);
+                                                   var marker = new kakao.maps.Marker({position: markerPosition});
+                                                   marker.setMap(map);">지도위치보기</a>
+                                                    <input type="hidden" class="latitude" value="${el.latitude}"/>
+                                                    <input type="hidden" class="longitude" value="${el.longitude}"/>
+                                                  </div>
+                                               </div>`)
+                  })
+
+                }).catch(err => {
+          console.log(err)
+        })
+          page++
+
+          if(page > 5){
+              page = 1
+              $('#card-list').empty()
           }
       })
 
