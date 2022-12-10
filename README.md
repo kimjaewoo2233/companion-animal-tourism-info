@@ -55,7 +55,8 @@ BackEnd:김재우(본인)
 index.html은 MVC 패턴으로 클라이언트한테 넘어가는 html 파일이다. 여기서 단점은 데이터가 바로 바뀌지 않고 새로고침이나 다른 주소로 요청을 보내야만 컨트롤러를 거치면서 데이터에 변환이 일어난다. 그렇기에 비동기 방식을 사용하여 데이터를 받는 방식이 필요했다. 그렇게 DataController를 RestController로 만들었다. 그렇게 JSON으로 데이터요청을 주고 받는 방식으로 DataController를 개발했다. DataController도 마찬가지로 Service클래스를 통해 DB에 데이터를 처리하며 DTO와 Entity를 사용하여 주고받는 형식이다.
 
 <h2>메인페이지</h2>
-> 메인
+
+> 메인페이지 접속
 ![image](https://user-images.githubusercontent.com/79129475/206825031-42321fbd-1e16-4bcc-b0d6-0d814eb32097.png)
 > 페이지에 접속하면 바로 볼 수 있는 화면이다 read more을 클릭하면 후기남기는 게시판으로 이동한다.
 ![image](https://user-images.githubusercontent.com/79129475/206825046-e906b8bd-696d-4941-9226-d798fc5f3729.png)
