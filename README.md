@@ -12,17 +12,8 @@
 <h2>기술스택</h2>
   Springboot, SpringDataJPA, SpringSecurity, JQuery, Bootstrap, axios, OpenAPI(Naver 검색, 공공데이터, 카카오맵) 
   
-<h2>Nodejs를 쓰지 않은 이유</h2> 
-<br>
-Node가 확실히 Spring보다 가볍고 빠른 건 사실이지만, 유지보수나 객체지향 측면에서는 Spring이 훨씬 좋다 생각한다. 현재 프로젝트 규모는 상당히 가벼운 작업이지만 추후 더 작업을 해보고 추가할 생각이기에 Node를 쓰지 않았다. Node는 single-thread 동작이라 부하가 큰 단일 작업을 수행해야하는 경우는 성능 저하를 피하지 못한다. Spring은 동기방식에 Node에 비해 무거워서 현재 프로젝트 정도에서 사용하기에 Node가 적합할 수도 있다고 생각했지만 이번 학기가 끝난 이후 조금 더 기능을 추가하고 규모를 키울 생각이기에 그때가서 Node로 개발하였을시 문제점이 더 크게 나올 거 같아 Spring으로 개발을 시작하였다.
 
-<h2>팀원 및 개발기간</h2>
 
-```C
-팀원: 김재우(본인)
-FrontEnd:김재우(본인)
-BackEnd:김재우(본인)
-```
 
 <h2>전체적인 백엔드 구성</h2>
 
