@@ -1,4 +1,3 @@
-# companion-animal-tourism-info
 
 # 프로젝트 보고서 20175209 김재우
 
